@@ -1,0 +1,185 @@
+/* HERO */
+.hero-negocio {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    color: white;
+}
+
+.hero-line {
+    width: 130px;
+    height: 3px;
+    background: white;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 900;
+}
+
+/* INFO SECTION */
+.negocio-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px;
+    background: #f5f0eb;
+}
+
+.neg-left {
+    width: 60%;
+}
+
+.neg-left p {
+    margin-bottom: 20px;
+    line-height: 23px;
+}
+
+.neg-right {
+    width: 30%;
+    text-align: right;
+}
+
+.neg-right h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.btn-arrow {
+    font-size: 34px;
+    text-decoration: none;
+    color: black;
+}
+
+/* WHY US */
+.why-us {
+    display: flex;
+    padding: 70px 80px;
+    background: white;
+}
+
+.why-left {
+    width: 55%;
+}
+
+.why-left h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+}
+
+.why-left p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 12px 20px;
+    text-align: justify;
+}
+
+.btn-arrow2 {
+    margin-top: 25px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 20px;
+}
+
+.why-right {
+    width: 45%;
+}
+
+.img-wire {
+    width: 100%;
+    height: 350px;
+    background: #d8d8d8;
+}
+
+/* 3 IMÁGENES */
+.cards3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 80px;
+    background: #f5f0eb;
+}
+
+.card {
+    width: 30%;
+}
+
+/* Corrección importante */
+.card-img {
+    width: 100%;
+    height: 250px;
+    background: #d8d8d8;
+    margin-bottom: 20px;
+    overflow: hidden; /* evita desbordes */
+    border-radius: 8px;
+}
+
+/* Esto asegura que las imágenes se adapten bien */
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* recorte bonito y profesional */
+    display: block;
+}
+
+.card h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* CONTACT */
+.contact-negocio {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 80px;
+}
+
+.contact-left {
+    width: 50%;
+}
+
+.contact-left h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c3c3c3;
+}
+
+textarea {
+    height: 130px;
+}
+
+.btn-send {
+    width: 120px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

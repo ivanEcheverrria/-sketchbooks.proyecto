@@ -1,0 +1,144 @@
+/* --- BASE DEL SITIO (MISMO ESTILO) --- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pub{
+    background: rgb(236, 99, 99);
+    padding: 5px;
+    text-align: center;
+}
+
+header{
+    background-color: blanchedalmond;
+}
+
+nav{
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 50px;
+    width: 120px;
+}
+
+ul.menu{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+ul.menu li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* --- ICONOS NAV --- */
+.icons{
+    display: flex;
+    gap: 20px;
+}
+
+.icons i{
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.icons i:hover{
+    color: #ff4b4b;
+}
+
+/* --- CONTACTO --- */
+.contact-container{
+    padding: 80px 100px;
+    background: #f4ece7;
+}
+
+.contact-container h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.contact-container p{
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.form-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+}
+
+.form-contacto input,
+.form-contacto textarea{
+    padding: 12px;
+    border: 1px solid #aaa;
+    background: white;
+    font-size: 15px;
+}
+
+.form-contacto textarea{
+    height: 150px;
+    resize: none;
+}
+
+.btn-send{
+    padding: 12px 20px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-send:hover{
+    background: #ff4b4b;
+}
+
+/* BOTÓN VOLVER */
+.btn-back{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.btn-back:hover{
+    background: #ff4b4b;
+}
+
+/* MENSAJE ESTADO */
+.mensaje-estado{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer{
+    background: black;
+    color: white;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.divider1{
+    width: 100%;
+    height: 3px;
+    background: white;
+    margin: 20px 0;
+}

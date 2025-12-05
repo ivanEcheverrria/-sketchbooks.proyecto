@@ -1,0 +1,81 @@
+/* RESETEO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ENCABEZADO */
+.header-terms{
+    background: blanchedalmond;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 3px solid black;
+}
+
+.header-terms h1{
+    font-size: 40px;
+    font-weight: 900;
+    color: black;
+}
+
+.header-terms p{
+    margin-top: 10px;
+    color: #333;
+    font-size: 16px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.terms-container{
+    background: #f4ece7;
+    padding: 60px 100px;
+}
+
+/* CAJAS DE TEXTO */
+.terms-box{
+    background: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-left: 6px solid #f17f6d; /* color acorde a newsletter */
+}
+
+.terms-box h2{
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.terms-box p{
+    line-height: 22px;
+    font-size: 15px;
+    color: #333;
+}
+.btn-back{
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+
+.btn-back:hover{
+    background: #ff4b4b; /* mismo hover que tus íconos */
+}
+footer{ 
+    background-color: black; color: white; 
+} 
+.cont_foot{
+     display: inline-block; 
+} .divider1 { 
+    width: 100%; 
+    height: 3px; 
+    background: white; 
+    margin-top: 20px;
+     margin-bottom: 20px; 
+    } 
+.links{ display: flex; justify-content: space-around; padding: 40px ; color: white; display: inline-block; padding-left: 80px; } .foot{ color: #f4ece7; }

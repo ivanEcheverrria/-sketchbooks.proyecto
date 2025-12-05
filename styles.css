@@ -1,0 +1,291 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.pub{
+    background: rgb(236, 99, 99);
+    margin-top: 4px;
+    padding: 5px;
+    text-align: center;
+}
+
+header{
+    background-color: blanchedalmond;
+}
+
+
+nav{
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* LOGO - MENU - ICONOS */
+}
+
+.logo{
+    height: 50px;
+    width: 120px;
+}
+
+/* MENU */
+ul.menu{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+ul.menu li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+
+/* ICONOS DERECHA */
+.icons{
+    display: flex;
+    gap: 20px;
+}
+
+.icons i{
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.icons i:hover{
+    color: #ff4b4b;
+}
+
+/* ======== HERO / PROMO ======== */
+.promo-container {
+    display: flex;
+    width: 100%;
+    height: 650px;
+    background: #f4ece7;
+}
+
+.promo-left {
+    width: 65%;
+    position: relative;
+}
+
+.promo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promo-text {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    color: white;
+}
+
+.promo-text h1 {
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 55px;
+}
+
+.btn-shop {
+    margin-top: 25px;
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+/* ======== PROMO DERECHA ======== */
+.promo-right {
+    width: 35%;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.right-box h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.right-box p {
+    width: 85%;
+    color: #333;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.arrow-link {
+    font-size: 26px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.divider {
+    width: 100%;
+    height: 3px;
+    background: black;
+}
+
+.gift-img {
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* ======== VIDEO SECTION ======== */
+.section-video {
+    display: flex;
+    padding: 70px;
+    background: #f5f5f5;
+}
+
+.video-text {
+    width: 45%;
+}
+
+.video-text h2 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.video-text p {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.btn-story {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+}
+
+.video-box {
+    width: 55%;
+    padding-left: 40px;
+}
+
+/* ======== SECTION RECIPE ======== */
+.section-recipe {
+    display: flex;
+    height: 580px;
+}
+
+.recipe-left {
+    width: 45%;
+    background: #b6dba2;
+    padding: 60px;
+}
+
+.recipe-left h4 {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.recipe-left h2 {
+    margin: 20px 0;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.recipe-left p {
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+.btn-recipe {
+    border: 1px solid black;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.recipe-right {
+    width: 55%;
+}
+
+.recipe-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ======== INSTAGRAM GRID ======== */
+.section-instagram {
+    background: #f4ede7;
+    padding: 60px;
+    text-align: center;
+}
+
+.insta-header {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.insta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.insta-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+/* ======== NEWSLETTER ======== */
+.section-newsletter {
+    background: #f17f6d;
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
+.section-newsletter input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+}
+
+.section-newsletter button {
+    padding: 10px 25px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* ======== FOOTER ======== */
+footer{ 
+    background-color: black; color: white; 
+} 
+.cont_foot{
+     display: inline-block; 
+} .divider1 { 
+    width: 100%; 
+    height: 3px; 
+    background: white; 
+    margin-top: 20px;
+     margin-bottom: 20px; 
+    } 
+.links{ display: flex; justify-content: space-around; padding: 40px ; color: white; display: inline-block; padding-left: 80px; } .foot{ color: #f4ece7; }

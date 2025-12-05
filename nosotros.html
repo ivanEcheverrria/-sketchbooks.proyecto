@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="nosotros.css">
+    <link rel ="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+    <div class="pub"> Si quieres conocer más da <a href="services.html">Click aqui</a></div>
+
+    <nav>
+        <img class="logo" src="https://d22fxaf9t8d39k.cloudfront.net/fe0589cac525ee5ae4e9d29f74322dee069b3201c095da70f83b919ade7a2878261095.png" width="100" height="100">
+
+        <ul class="menu">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+        </ul>
+
+        <div class="icons">
+            <a href="index.html"><i class="fa-solid fa-user"></i></a>
+            <a href="productos.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </nav>
+</header>
+
+    <section class="hero2">
+        <img src="https://static.skillshare.com/uploads/discussion/tmp/8261897b.jpg" class="hero-img2" alt="Hero">
+        <div class="hero-text2">
+            <div class="hero-line2"></div>
+            <h2>Conoce más sobre nosotros</h2>
+        </div>
+    </section>
+
+    <section class="cols section-bg">
+        <div>
+            <p class="strong"></p>
+            <p>Nuestros sketchbooks están hechos a mano con dedicación, cuidando cada detalle para ofrecer piezas únicas pensadas para artistas, ilustradores y amantes de la papelería creativa.</p>
+            <br>
+            <p>Cada cuaderno se elabora de manera artesanal: seleccionamos cuidadosamente los materiales, desde el papel hasta la encuadernación, para lograr una experiencia de dibujo suave, resistente y agradable al tacto.</p>
+        </div>
+
+        <div>
+            <p> Tanto si buscas un cuaderno para ilustrar, escribir, planificar o simplemente dejar fluir tus ideas, nuestra colección está diseñada para acompañarte en cada proyecto.</p>
+            <br>
+            <p>La calidad de los materiales, combinada con técnicas tradicionales de encuadernación, convierte cada sketchbook en una pieza especial que inspira creatividad.</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CORREGIDA -->
+    <section class="text-img">
+        <!-- Contenedor de texto -->
+        <div class="text-content">
+            <h2 class="title2">¿Cómo comenzó todo?</h2><br>
+
+            <p>
+                Nuestra marca nació del deseo de crear cuadernos que se sintieran como verdaderas herramientas artísticas. Comenzamos elaborando pequeños lotes para amigos y creadores, descubriendo que muchos buscaban piezas con personalidad, duraderas y versátiles.
+            </p>
+            <br>
+            <p>
+                Tras meses de experimentar con papeles, costuras y materiales, logramos una combinación que refleja calidad y dedicación artesanal. Hoy seguimos trabajando en un pequeño taller, manteniendo el proceso hecho a mano que nos distingue.
+            </p>
+        </div>
+
+        <!-- Imagen a la derecha -->
+        <img src="https://m.media-amazon.com/images/I/71l2SowcrfL._AC_SL1500_.jpg" class="side-img" alt="">
+    </section>
+
+    <section class="carousel-section section-bg">
+        <div class="carousel-title">
+            <div class="line-top"></div>
+            <h2>Lo que dicen nuestros clientes</h2><br><br>
+        </div>
+
+        <div class="carousel">
+            <button class="prev">&#10094;</button>
+
+            <div class="slide active">
+                <p class="quote">“La textura del papel es perfecta para mis bocetos. He probado muchas marcas y ninguna se siente tan bien como esta.”</p>
+                <p class="author">— Martin G.</p>
+            </div>
+
+            <div class="slide">
+                <p class="quote">“Lo que más me gusta es que cada cuaderno se nota hecho con amor. Ya compré tres y son perfectos para mis dibujos y anotaciones”</p>
+                <p class="author">— María L.</p>
+            </div>
+
+            <div class="slide">
+                <p class="quote">“La calidad del papel es increíble. Mis acuarelas no traspasan y los colores se ven hermosos.”</p>
+                <p class="author">— Sofía R.</p>
+            </div>
+
+            <div class="slide">
+                <p class="quote">“El diseño, los materiales y el acabado… todo está perfecto. Es un cuaderno que inspira desde que lo ves.”</p>
+                <p class="author">— María S.</p>
+            </div>
+
+            <div class="slide">
+                <p class="quote">“Me sorprendió lo bien que soporta diferentes técnicas. Desde tinta hasta gouache, todo queda perfecto.”</p>
+                <p class="author">— Luis P.</p>
+            </div>
+
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div class="cont_foot"> 
+                <img src="https://d22fxaf9t8d39k.cloudfront.net/fe0589cac525ee5ae4e9d29f74322dee069b3201c095da70f83b919ade7a2878261095.png" alt="logo" height="100px" width="100px" style="padding: 5px;">
+                <p>© 2024 Good & Proper Tea Co. All rights reserved.</p>
+                <p>Website by YourCompany</p>
+            </div> 
+            <div class="links">
+                <div class="divider1"></div>
+                <a class="foot" href="politicas.html">Privacy Policy</a>
+                <a class="foot" href="condiciones.html">Terms of Service</a>
+                <a class="foot" href="contacto.html">Contact Us</a>
+                <div class="divider1"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let index = 0;
+
+        function showSlide(i) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[i].classList.add('active');
+        }
+
+        document.querySelector('.next').onclick = () => {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        };
+
+        document.querySelector('.prev').onclick = () => {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        };
+    </script>
+
+</body>
+</html>
