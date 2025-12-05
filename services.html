@@ -26,10 +26,99 @@
         </div>
     </nav>
 </header>
-    <!-- Banner -->
     <div class="banner">
         <h1>GOOD & PROPER NEWS</h1>
     </div>
+    <!-- SECCIÓN DE INTERÉS + SUSCRIPCIÓN -->
+<div class="top-section">
+
+    <div class="left-box">
+        <label>I'm interested in:</label>
+        <select>
+            <option>All topics</option>
+            <option>Recipes</option>
+            <option>Tea Guides</option>
+            <option>News</option>
+        </select>
+    </div>
+
+    <div class="right-box">
+        <label>Join our mailing list for our latest news and offers:</label>
+        <div class="email-box">
+            <input type="email" id="emailInput" placeholder="Email address">
+            <button onclick="sendEmail()">SUBMIT</button>
+        </div>
+    </div>
+
+</div>
+
+<style>
+.top-section {
+    background-color: #f3e9df;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    font-family: Arial, sans-serif;
+}
+
+.top-section label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+    opacity: 0.7;
+}
+
+.left-box select {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+}
+
+.right-box .email-box {
+    display: flex;
+    gap: 0;
+}
+
+.right-box input {
+    width: 220px;
+    padding: 8px;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px 0 0 2px;
+}
+
+.right-box button {
+    padding: 9px 15px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+
+.right-box button:hover {
+    opacity: 0.8;
+}
+</style>
+
+<script>
+function sendEmail() {
+    const email = document.getElementById("emailInput").value;
+
+    // Validación básica de email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+        alert("Por favor ingresa un correo válido.");
+        return;
+    }
+
+    alert("¡Correo enviado correctamente!");
+}
+</script>
+
 
     <!-- Contenedor donde irán los artículos -->
     <div id="articles-container"></div>
@@ -154,3 +243,5 @@
 
 </body>
 </html>
+
+
