@@ -132,7 +132,43 @@
             <button class="next">&#10095;</button>
         </div>
     </section>
+<section class="section-newsletter">
 
+            <h3>MANTENTE AL DÍA CON NUESTRA MARCA</h3><br>
+            <p>
+            Suscríbete para recibir novedades, lanzamientos, tips creativos y ofertas exclusivas.<br> <strong>Además, obtén un 10% de descuento en tu primera compra.</strong>
+            </p><br>
+
+        <form class="newsletter-form" id="formNewsletter">
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Enviar</button>
+</form>
+
+<p id="msg"></p>
+
+
+<script>
+    document.getElementById("formNewsletter").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+        let email = document.getElementById("email").value;
+        let mensaje = document.getElementById("msg");
+
+        
+        let regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!regexCorreo.test(email)) {
+            mensaje.style.color = "red";
+            mensaje.textContent = "⚠️ Ingresa un correo válido.";
+            return;
+        }
+
+        mensaje.style.color = "green";
+        mensaje.textContent = "✔️ Correo enviado correctamente: " + email;
+    });
+</script>
+
+        </section>
     <footer class="footer">
     <div class="footer-container">
 
@@ -205,4 +241,5 @@
 
 </body>
 </html>
+
 
